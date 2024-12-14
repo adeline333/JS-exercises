@@ -5,3 +5,9 @@ var array = [12, 5, 7, 6, 24];
 
 let minValue = min(array);
 console.log("Min:", minValue); 
+
+var max = function findMax(list) {
+    return Math.max(...list);
+  }
+  let maxValue = max(array);
+  console.log("Max:", maxValue);
