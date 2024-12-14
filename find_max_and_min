@@ -1,0 +1,7 @@
+var min = function findMin(list) {
+  return Math.min(...list);
+}
+var array = [12, 5, 7, 6, 24];
+
+let minValue = min(array);
+console.log("Min:", minValue); 
