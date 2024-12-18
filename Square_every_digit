@@ -1,0 +1,6 @@
+function squareDigits(num){
+  let num1=num;
+  return Number(num1.toString().split('').map(num=>num*num).join(''));
+}
+
+console.log(squareDigits(345));
