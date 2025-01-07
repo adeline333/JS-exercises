@@ -1,0 +1,18 @@
+function disemvowel(str) {
+  /*declare a variable to store the new string
+  initialize a loop to iterate through the string
+  a condition inside the loop to check for the vovwels and remove them
+  store the new string in the variable*/
+  
+
+  let newString="";
+  let vowels="aeoiuAEOIU";
+  for(let i=0;i<str.length;i++){
+    if(!vowels.includes(str[i])){
+      newString+=str[i];
+    }
+  }
+  return newString;
+  
+}
+console.log(disemvowel("abracadabra"));
