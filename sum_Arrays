@@ -1,0 +1,22 @@
+function sum (numbers) {
+  //a variable to store the sum
+  //a loop to iterate and add
+  //a condition to chceck if its empty and return 0
+  
+   if(numbers.length===0){
+      
+      return 0;
+    }
+  let sum=0;
+  for(let i=0; i<numbers.length;i++){
+  
+      sum+=numbers[i];
+    }
+      return sum;
+   
+
+      
+  
+  //return sum
+}
+sum([1, 5.2, 4, 0, -1]);
