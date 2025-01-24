@@ -1,0 +1,30 @@
+function getMiddle(s) {
+    
+    
+    
+    let newString="";
+    let firstIndex=0;
+     let firstMiddleCharacter="";
+       let secondMiddleCharacter="";
+        let secondIndex=0;
+    for(let i=0; i=s.length;i++){
+      if(s.length%2==0){
+       firstIndex= ((s.length)/2)-1;
+         secondIndex=firstIndex+1;
+         firstMiddleCharacter=s[firstIndex];
+       secondMiddleCharacter=s[secondIndex];
+       newString=s[firstIndex]+s[secondIndex];
+        
+      }
+      
+    
+    else if (s.length%2!==0){
+        firstIndex= (((s.length)-1)/2);
+        newString=s[firstIndex];
+      }
+     return newString;
+    }
+
+}
+  console.log(getMiddle("testing"));
+ 
