@@ -92,9 +92,14 @@
   // const aggregated = aggregateByCategory(data);
   // console.log(aggregated); // Output: { A: 25, B: 45, C: 5 }
 
+//1
+
+  //2
+
   let f1=[{id:1,name:"pasacsie"},
     {id:2,name:"pascal"}
 ]
+
 const idName= arr =>
 {
     let newObj={};
@@ -104,3 +109,56 @@ const idName= arr =>
     return newObj;
 }
 console.log(idName(f1));
+
+//3
+
+const items = [
+    { type: 'fruit' },
+    { type: 'vegetable' },
+    { type: 'fruit' },
+    { type: 'fruit' },
+    { type: 'vegetable' },
+    { type: 'grain' },
+  ];
+  
+
+const ourFunc=(items)=>{
+    let newObj={};
+ 
+
+    for(let {type} of items){
+        if(newObj[type]===undefined){
+            newObj[type]=0;
+        }
+        else{
+            newObj[type]+=1;
+        }
+            
+    }
+    return newObj;
+
+}
+console.log(ourFunc(items));
+
+//4
+const people = [
+    { name: 'Alice', age: 16 },
+    { name: 'Bob', age: 22 },
+    { name: 'Charlie', age: 17 },
+    { name: 'David', age: 25 },
+  ];
+  
+  const adults=(people)=>{
+    let newArray=[];
+    for(let {name,age} of people ){
+        if(age>=18){
+           newArray.push(name.toUpperCase());
+        }
+    }
+    return newArray;
+  }
+  // const adults = filterAndMap(people);
+ console.log(adults(people)); // Output: ['BOB', 'DAVID']
+
+ //5
+ 
