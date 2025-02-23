@@ -161,4 +161,18 @@ const people = [
  console.log(adults(people)); // Output: ['BOB', 'DAVID']
 
  //5
- 
+ const nestedArray = [1, [2, 3], 4, [2, [5, 1]], 3];
+ const func1=(nest)=>{
+    let flattened=nest.flat();
+    let fla=[];
+    for(let num of flattened){
+         fla = flattened.sort(function sort(a,b){
+            return a-b;
+         })
+      
+
+        
+    }
+    return fla;
+ }
+ console.log(func1(nestedArray));
