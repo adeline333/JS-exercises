@@ -18,8 +18,14 @@ const sumByCategory = (arr) => {
 //   }
 
 
-// const data = 
-//     { category: 'A', value: 10 };
-//   let {category} =data;
-//   console.log(data);
+const data = [
+      { category: 'A', value: 10 },
+      { category: 'B', value: 20 },
+      { category: 'A', value: 15 },
+      { category: 'C', value: 5 },
+      { category: 'B', value: 25 },
+    ];
+    
+    const aggregated = sumByCategory(data);
+    console.log(aggregated); // Output: { A: 25, B: 45, C: 5 }
   

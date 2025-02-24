@@ -163,14 +163,17 @@ const people = [
  //5
  const nestedArray = [1, [2, 3], 4, [2, [5, 1]], 3];
  const func1=(nest)=>{
-    let flattened=nest.flat();
+    let flattened=nest.flat(2);
     let fla=[];
     for(let num of flattened){
-         fla = flattened.sort(function sort(a,b){
+      if(!fla.includes(num)){
+        fla.push(num);
+       }
+
+         fla = fla.sort(function sort(a,b){
             return a-b;
          })
-      
-
+   
         
     }
     return fla;
