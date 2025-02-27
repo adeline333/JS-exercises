@@ -112,6 +112,7 @@ console.log(idName(f1));
 
 //3
 
+
 const items = [
     { type: 'fruit' },
     { type: 'vegetable' },
@@ -127,6 +128,7 @@ const ourFunc=(items)=>{
  
 
     for(let {type} of items){
+      //checks if it already exists
         if(newObj[type]===undefined){
             newObj[type]=0;
         }
