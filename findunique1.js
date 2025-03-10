@@ -14,6 +14,7 @@ function findUniq(arr) {
 
 }
 
+//the code below led to execution time error in codewars but is fully functioning
 // function findUniq(arr) {
 
 //   let num=0;
