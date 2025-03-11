@@ -48,3 +48,26 @@ let student1= new Student("Muhayimana", 2654);
 let student2= new Student("Uwera", 2644);
 console.log(student1.welcomeStudent());
 console.log(student2.welcomeStudent());
+
+
+
+//PROTOTYPE
+//D)
+//Build a custom object using Object.create and set its prototype to a predefined object. 
+//Demonstrate how inheritance works in this scenario.
+
+ let workers={
+    greet: function(){
+        return `Hello, my name is ${this.name} and my age is ${this.age}`;
+    }
+ }
+ let worker1=Object.create(workers);
+ worker1.name="Sarah";
+ worker1.age="22";
+
+ let worker2=Object.create(workers);
+ worker2.name="Raissa";
+ worker2.age=51;
+
+ console.log(worker1.greet());
+ console.log(worker2.greet());
