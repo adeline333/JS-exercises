@@ -30,3 +30,21 @@ Employee.prototype.work = function(){
 let employee1=new Employee("Kamali",21, "Software Developer");
 console.log(employee1.greet());
 console.log(employee1.work());
+
+//PROTOTYPE
+//b)
+//Create a constructor function and add methods to its prototype. 
+//Then, create instances of the constructor and observe how they share the methods.
+function Student (name,id){
+    this.name=name;
+    this.id=id;
+
+    Student.prototype.welcomeStudent=function(){
+        return `Hello dear ${this.name} welcome back to school`;
+    }
+}
+
+let student1= new Student("Muhayimana", 2654);
+let student2= new Student("Uwera", 2644);
+console.log(student1.welcomeStudent());
+console.log(student2.welcomeStudent());
