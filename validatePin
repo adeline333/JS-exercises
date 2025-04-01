@@ -1,0 +1,11 @@
+const validatePIN = (pin) => {
+  
+  //return true or false
+  let pinValidation= /^\d{4}$|^\d{6}$/.test(pin) ;
+   if (pinValidation){
+     return true;
+   }
+  else{
+    return false;
+  }
+}
